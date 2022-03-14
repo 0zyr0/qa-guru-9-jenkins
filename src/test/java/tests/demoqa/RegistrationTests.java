@@ -24,7 +24,7 @@ public class RegistrationTests extends TestBase {
         $(".react-datepicker__day--030:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Math").pressEnter();
         $("#hobbiesWrapper").$(byText("Music")).click();
-        $("#uploadPicture").uploadFromClasspath("img/1.png");
+//        $("#uploadPicture").uploadFromClasspath("resources/img/1.png");
         $("#userNumber").setValue("8800555353");
         $("#currentAddress").setValue("www.leningrad-spb.ru");
         $("#state").scrollTo().click();
