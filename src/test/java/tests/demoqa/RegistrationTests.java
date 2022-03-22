@@ -1,5 +1,6 @@
 package tests.demoqa;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -43,4 +44,30 @@ public class RegistrationTests extends TestBase {
         $(".table").shouldHave(text("State and City"), text("NCR Delhi"));
         $("#closeLargeModal").scrollTo().pressEnter();
     }
+
+    @Test
+    @Tag("properties")
+    void someTest5() {
+        String browser = System.getProperty("browser");
+
+        System.out.println(browser);
+
+    }
+
+    @Test
+    @Tag("properties")
+    void someTest6() {
+        String browser = System.getProperty("browser");
+
+        System.out.println(browser);
+
+    }
+
+
+//    1.1 Передать из дженкинса адрес удаленного браузера, а так же отдельно к нему логин и пароль (user1:1234)
+//
+//1.2* (это задание будет после следующего занятия) Спрятать логин/пароль к удаленному браузеру в .properties файл, считывать его нужно в коде с owner
+//
+//2. Доработать сборку в jenkins, добавить поля для выбора браузера и версий - попробовать запустить тесты на других браузерах.
+
 }
