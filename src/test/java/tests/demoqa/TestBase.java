@@ -19,12 +19,15 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
-        System.setProperty("login_qa_guru", "user1");
-        System.setProperty("password_qa_guru", "1234");
-        System.setProperty("url_qa_guru", "selenoid.autotests.cloud/wd/hub");
-        String login = System.getProperty("login_qa_guru");
-        String password = System.getProperty("password_qa_guru");
-        String url = System.getProperty("url_qa_guru");
+//        System.setProperty("login_qa_guru", "user1");
+//        System.setProperty("password_qa_guru", "1234");
+//        System.setProperty("url_qa_guru", "selenoid.autotests.cloud/wd/hub");
+//        String login = System.getProperty("login_qa_guru");
+//        String password = System.getProperty("password_qa_guru");
+//        String url = System.getProperty("url_qa_guru");
+        String login = System.getProperty("login");
+        String password = System.getProperty("password");
+        String url = System.getProperty("url");
 //        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         String remoteUrl = "https://" + login + ":" + password + "@" + url;
         Configuration.remote = remoteUrl;
