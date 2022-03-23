@@ -19,9 +19,10 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
-//        System.setProperty("login_qa_guru", "user1");
-//        System.setProperty("password_qa_guru", "1234");
-//        System.setProperty("url_qa_guru", "selenoid.autotests.cloud/wd/hub");
+
+        System.setProperty("login", "user1");
+        System.setProperty("password", "1234");
+        System.setProperty("url", "selenoid.autotests.cloud/wd/hub");
 //        String login = System.getProperty("login_qa_guru");
 //        String password = System.getProperty("password_qa_guru");
 //        String url = System.getProperty("url_qa_guru");
@@ -30,6 +31,7 @@ public class TestBase {
         String url = System.getProperty("url");
 //        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         String remoteUrl = "https://" + login + ":" + password + "@" + url;
+//        String remoteUrl = "https://" + login + ":" + password + "@" + url;
         Configuration.remote = remoteUrl;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
