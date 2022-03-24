@@ -20,9 +20,9 @@ public class TestBase {
         Configuration.browserSize = "1920x1080";
 
 
-        System.setProperty("login", "user1");
-        System.setProperty("password", "1234");
-        System.setProperty("url", "selenoid.autotests.cloud/wd/hub");
+//        System.setProperty("login", "user1");
+//        System.setProperty("password", "1234");
+//        System.setProperty("url", "selenoid.autotests.cloud/wd/hub");
 //        String login = System.getProperty("login_qa_guru");
 //        String password = System.getProperty("password_qa_guru");
 //        String url = System.getProperty("url_qa_guru");
