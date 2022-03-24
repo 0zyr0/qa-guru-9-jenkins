@@ -34,6 +34,11 @@ public class TestBase {
 //        String remoteUrl = "https://" + login + ":" + password + "@" + url;
         Configuration.remote = remoteUrl;
 
+
+        System.out.println("login: " + login);
+        System.out.println("password: " + password);
+        System.out.println("url: " + remoteUrl);
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
